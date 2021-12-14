@@ -1,34 +1,117 @@
 <!DOCTYPE html>
 <html lang="HU">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Martin oldala</title>
     <style>
-a{
-        color: #1E90FF;
-    }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+h1 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: slateblue;
+}
+body {
+    background-color: #E6E6FA;
+}
+table {
+    border: black;
+    border-style: inset;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: slateblue;
+}
 
+
+div {
+    
+  margin: 0;
+  padding: 0;
+  width: 230px;
+  background-color: #ddddfd ;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  top: 0%;
+}
+
+div a {
+    
+  display: block;
+  color:black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+div a.active {
+  background-color: slateblue;
+  color: black;
+}
+
+div a:hover:not(.active) {
+  background-color: black;
+  color: slateblue;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 110%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
     </style>
 </head>
-    <body bgcolor="black" background="https://wallpaperaccess.com/full/4419090.jpg"
-    </body>
-    <p> <a href="index.html"    style="text-decoration: none; color: tomato;"  > 1.FELADAT Kollázs Feladat</a>  <a href="keplink.html"  style="text-decoration: none;"  > 2.FELADAT Képlink Feladat</a>  
-        <a href="listak.html"     style="text-decoration: none;"  > 3.FELADAT Lista Feladat</a>    
-        <a href="orarend.html"          style="text-decoration: none;"  > 4.FELADAT Órarend</a>          
-        <a href="css.html"          style="text-decoration: none;"  > 5.FELADAT CSS feladat</a>      
-       </p>
-       
-    <h1 style="color: purple;" align"center"> <B>Lempner Martin </B> </h1>
-    <h2 style="color: red;"> Lempner Martin</h2>
-    <h3 style="color: ghostwhite;"> Lempner Martin</h3>
-    <h4 style="color: gold;"> Lempner Martin</h4>
-    <h5 style="color: lightskyblue;">Lempner Martin</h5>
-    <h6 style="color: greenyellow;"> Lempner Martin</h6>
+<body>
+    <h1> Martin Oldala </h1>
+
+<table border="5px" align="center">
+ <tr>
+<th>   Feladatok :    </th>
+<th>   1. Feladat       </th>
+<th> 2. Feladat</th>
+<th> 3. Feladat</th>
+<th> 4. Feladat</th>
+<th> 5. Feladat</th>
+ </tr>
+
+ <tr>
+<th> Megtekintés :</th>
+<th> <a href="kollazs.html" target="_blank" > Kollázs </a> </th>
+<th> <a href="keplink.html" target="_blank"> Képlink </a> </th>
+<th> <a href="listak.html" target="_blank"> Lista    </a> </th>
+<th> <a href="orarend.html" target="_blank"> Órarend </a> </th>
+<th> <a href="css.html" target="_blank"> CSS         </a> </th>
+ </tr>
+    </table>
+    <div class="sidebar">
+        <a class="active" href="index.html">Főoldal</a>
+        <a href="kollazs.html">1. Feladat Kollázs</a>
+        <a href="keplink.html">2. Feladat Képlink</a>
+        <a href="listak.html">3. Feladat Lista</a>
+        <a href="orarend.html">4. Feladat Órarend</a>
+        <a href="css.html">5. Feladat CSS</a>
+        
+    </div>
     
-          
-         <p style="color: purple;"> A kollázs képem:</p>
-  <p align"center"> </p>
-      
-                    <img src="Collage.jpg.jpg" alt="Ezen a képen a saját kollázsom látható" width="825" height="825">
-
-
+</body>
 </html>
