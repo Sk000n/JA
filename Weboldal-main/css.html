@@ -3,43 +3,109 @@
 <head>
    
     <title>CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Orbitron&display=swap" rel="stylesheet">
+
     <style> 
     a{
         color: #1E90FF;
     }
     img {
         margin-left: 770px;
+        text-align: center;
     }
    h1 {
         color:whitesmoke;
         text-align: center;
          background-color: cyan;
+         
    }
    h2 {
         color: whitesmoke;
+        text-align: center;
+        margin-left: 300px;
    }
    p {
          color: whitesmoke;
+         text-align: center;
+        margin-left: 250px;
+         
    }
    body {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: large;
+    font-family: 'Inconsolata', monospace;
+font-family: 'Orbitron', sans-serif;
          background-color:grey;
    }
+   div {
+  margin: 0;
+  padding: 0;
+  width: 230px;
+  background-color: #ddddfd ;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  top: 0%;
+}
+
+div a {
+  display: block;
+  color:black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+div a.active {
+  background-color: slateblue;
+  color: black;
+}
+
+div a:hover:not(.active) {
+  background-color: black;
+  color: slateblue;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 110%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+    
     </style>
 </head>
 <body>
-    <p> <a href="index.html"    style="text-decoration: none;"  > 1.FELADAT Kollázs Feladat</a>  <a href="keplink.html"  style="text-decoration: none;"  > 2.FELADAT Képlink Feladat</a>  
-        <a href="listak.html"     style="text-decoration: none;"  > 3.FELADAT Lista Feladat</a>    
-        <a href="orarend.html"          style="text-decoration: none;"  > 4.FELADAT Órarend</a>          
-        <a href="css.html"          style="text-decoration: none; color: tomato;"  > 5.FELADAT CSS feladat</a>      
-       </p>
+    
           
     <h1> Takgy a híres Tiktokker</h1>
 <h2> Tiktokon több tízezer követőt szerzett </h2>
 <p> Az utóbbi időben nagyon híres lett a korábban elítélt manapság már külföldön élő Taky Gyula</p>
 <p> Azzal foglalkozik, hogy nap mint nap vidókat tesz közzé az interneten tengerparti kis kuckójáról illetve kalandjairól</p>
-<p> Korábban gyilkoságért ült 8 évet börtönben. Azt nyilatkozta: -Nem bántam meg hiszen csak egy mocskos bűnözőt öltem meg. Mondta Taky Gyula</p>
+<p> Korábban gyilkoságért ült 8 évet börtönben. Azt nyilatkozta: <q> Nem bántam meg hiszen csak egy mocskos bűnözőt öltem meg. </q> Mondta Taky Gyula </p>
 <img  src="letöltés.jfif" alt="Taky Gyula" width="400" > 
+<div class="sidebar">
+    <a href="index.html">Főoldal</a>
+        <a  href="kollazs.html">1. Feladat Kollázs</a>
+        <a href="keplink.html">2. Feladat Képlink</a>
+        <a href="listak.html">3. Feladat Lista</a>
+        <a href="orarend.html">4. Feladat Órarend</a>
+        <a class="active" href="css.html">5. Feladat CSS</a>
+</div>
 </body>
 </html>
