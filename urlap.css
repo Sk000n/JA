@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <title>Űrlap</title>
+
+    <link rel="stylesheet" href="urlap.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Orbitron&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <form name="rendeles">
+        <div class="rendeles"> 
+            <h1>Fegyver Rendelés</h1>
+        </div>
+        <fieldset>
+            <legend>Általányos adatok:</legend>
+            <p><label> Elmúlt 18 éves? <input type='radio' name='elmult'> Igen <input type='radio' name='elmult'> Nem</p>
+            <p><label>Az ön neve: <input type="text" name="neve">
+                    <small>Vezetéknév Keresztnév</small></label></p>
+            <p><label>Telefonszám: <input type="tel" name="telefon" size="10"></label></p>
+        </fieldset>
+        <fieldset>
+            <legend>Fegyver típusai</legend>
+            <p><label><input type="checkbox" name="tipus" value="Kiskaliber">Kiskaliber</label></p>
+            <p><label><input type="checkbox" name="tipus" value="Nagykaliber">Nagykaliber</label></p>
+            <p><label><input type="checkbox" name="tipus" value="Shotgun">Shotgun</label></p>
+            <p><label><input type="checkbox" name="tipus" value="Vadászpuska">Vadászpuska</label></p>
+        </fieldset>
+        <fieldset>
+            <legend>Lőszerek</legend>
+            <p><label><input type="checkbox" name="tipus" value="9.mm">9.mm (Kiskaliber)</label></p>
+            <p><label><input type="checkbox" name="tipus" value="7.62">7.62 (Nagykaliber)</label></p>
+            <p><label><input type="checkbox" name="tipus" value="soretes">Sörétes lőszer (Shotgun)</label></p>
+            <p><label><input type="checkbox" name="tipus" value="cal.338">cal.338 (Vadászpuska)</label></p>
+            <p><label>Mennyiség (Alapból egy 30darabos pack jár a csomaggal a mennyiség szorzóként működik) <input type="number" name="mennyiseg"> db</label></p>
+        </fieldset>
+        <fieldset>
+            <Legend>Speciális lőszerek</Legend>
+            <select title='Válassz speciális lőszert'>
+                <option disabled=disable selected> Válassz!</option>
+            
+                <optgroup label='Sörétes'>
+                    <option>Robbanó sörétes lőszer</option>
+                    <option>Lángoló sörétes lőszer</option>
+                    <option>Erősebb sörétes lőszer</option>
+                </optgroup>
+            
+                <optgroup label='Vadászpuska'>
+                    <option>Robbanó vadászpuska lőszer</option>
+                    <option>Lángoló vadászpuska lőszer</option>
+                    <option>Erősebb vadászpuska lőszer</option>
+                </optgroup>
+            
+                <optgroup label='Nagykaliber'>
+                    <option>Robbanó 7.62-es lőszer</option>
+                    <option>Lángoló 7.62-es lőszer</option>
+                    <option>Erősebb 7.62-es lőszer</option>
+                </optgroup>
+
+                <optgroup label='Kiskaliber'>
+                    <option>Robbanó 9.mm-es lőszer</option>
+                    <option>Lángoló 9.mm-es lőszer</option>
+                    <option>Erősebb 9.mm-es lőszer</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Végezetül</legend>
+            <p><label>Egyedi kérés (Pl.: célkereszt, nagyobb tár vagy különleges lőszerek): <textarea
+                        name="egyeb"></textarea></label></p>
+            <p><label>Kért szállítási idő (Minimum 5-10 munkanap rendeléstől függően): <input type='date'> <input type="time" 
+                        name="kiszallitas"></label></p>
+            <br>
+            <input type="reset" name="visszaallitas">
+            <input type="submit" name="kuldes">
+        </fieldset>
+        
+    </form>
+
+    <footer>
+        <h2> &copy; Kizárólag tanulmányi célra alapuló weboldal </h2>
+
+    </footer>
+    <div class="sidebar">
+        <a href="index.html">Főoldal</a>
+        <a href="kollazs.html">1. Feladat Kollázs</a>
+        <a href="keplink.html">2. Feladat Képlink</a>
+        <a href="listak.html">3. Feladat Lista</a>
+        <a href="orarend.html">4. Feladat Órarend</a>
+        <a href="css.html">5. Feladat CSS</a>
+        <a class="active"href="urlap.html">6. Feladat Űrlap</a>
+        
+    </div>
+</body>
+
+</html>
