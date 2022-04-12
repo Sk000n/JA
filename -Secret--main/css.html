@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="HU">
+<head>
+   <link rel="shortcut icon" type="image/png" href="favicon.ico.png">
+    <title>CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+    <style> 
+     footer{
+        position: absolute;
+        background-color: black;
+        width: 100%;
+        height: 53px;
+        color: white;
+        bottom: 0;
+    }
+    a{
+        color: #1E90FF;
+    }
+    img {
+        margin-left: 720px;
+        text-align: center;
+        margin-top: 30px;
+    }
+   h1 {
+        color:whitesmoke;
+        text-align: center;
+         background-color: burlywood;
+         
+   }
+   h2 {
+        color: whitesmoke;
+        text-align: center;
+   }
+   p {
+         color: whitesmoke;
+         text-align: center;
+         
+   }
+   body {
+    font-family: 'Inconsolata', monospace;
+font-family: 'Orbitron', sans-serif;
+         background-color:rgb(151, 128, 97);
+   }
+   div {
+    
+    margin: 0;
+    padding: 0;
+    width: 230px;
+    background-color: rgb(139, 111, 74);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    top: 0%;
+  }
+  
+  div a {
+      
+    display: block;
+    color:black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  div a.active {
+    background-color: white;
+    color: black;
+  }
+  
+  div a:hover:not(.active) {
+    background-color: black;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 110%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+    </style>
+</head>
+<body>
+    
+          
+    <h1> Takgy a híres Tiktokker</h1>
+<h2> Tiktokon több tízezer követőt szerzett </h2>
+<p> Az utóbbi időben nagyon híres lett a korábban elítélt manapság már külföldön élő Taky Gyula</p>
+<p> Azzal foglalkozik, hogy nap mint nap vidókat tesz közzé az interneten tengerparti kis kuckójáról illetve kalandjairól</p>
+<p> Korábban gyilkoságért ült 8 évet börtönben. Azt nyilatkozta: <q> Nem bántam meg hiszen csak egy mocskos bűnözőt öltem meg. </q> Mondta Taky Gyula </p>
+<img  src="letöltés.jfif" alt="Taky Gyula" width="400" > 
+<div class="sidebar">
+    <a href="index.html">Főoldal</a>
+    <a href="kollazs.html">1. Feladat Kollázs</a>
+    <a href="keplink.html">2. Feladat Képlink</a>
+    <a href="listak.html">3. Feladat Lista</a>
+    <a href="orarend.html">4. Feladat Órarend</a>
+    <a class="active" href="css.html">5. Feladat CSS</a>
+    <a href="urlap.html">6. Feladat Űrlap</a>
+    <a href="evszakok.html">7. Feladat Évszakok</a>
+    <a href="gomb.html">8. Feladat Gomb</a>
+    <a href="pita.html">9. Feladat Javascript</a>
+    <a href="kosar.html">10 Feladat Kosár</a>
+    <a href="pitagorasz.html">11. Feladat Pitagorasz</a>
+    <a href="webshop.html">12. Feladat Webshop</a>
+</div>
+<footer>
+  <h2> Copyright &copy; Skooon &copysr;</h2>
+    </footer>
+</body>
+</html>

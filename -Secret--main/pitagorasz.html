@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="favicon.ico.png">
+    <title>Pitagorasz</title>
+ 
+    <style>
+
+body {
+    background-color: burlywood;
+}         
+
+footer{
+        position: absolute;
+        background-color: black;
+        width: 100%;
+        height: 53px;
+        color: white;
+        bottom: 0;
+    }
+    h2 {
+        text-align: center;
+    }
+
+        .adatok  {
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 30px;
+            margin-right: auto;
+            display: block;
+            border: 1px solid black;
+            max-width: 290px;
+        }
+
+        .adatok > button {
+            margin: 0 auto 0 auto;
+            display: block;
+        }
+        
+        input {
+            width: 135px;
+            padding: 5px;
+            border: 1px saddlebrown solid;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+        }
+
+        #aoldal{
+            margin-top: 10px;
+        }
+        
+        img {
+
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px;
+            width: 260px;
+        }
+
+        span {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 30px;
+        }
+
+        .nem {
+
+margin: 0;
+padding: 0;
+width: 230px;
+background-color: rgb(139, 111, 74);
+position: fixed;
+height: 100%;
+overflow: auto;
+top: 0%;
+}
+
+div a {
+
+display: block;
+color: black;
+padding: 16px;
+text-decoration: none;
+}
+
+div a.active {
+background-color: white;
+color: black;
+}
+
+div a:hover:not(.active) {
+background-color: black;
+color: white;
+}
+
+div.content {
+margin-left: 200px;
+padding: 1px 16px;
+height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+.sidebar {
+  width: 110%;
+  height: auto;
+  position: relative;
+}
+
+.sidebar a {
+  float: left;
+}
+
+div.content {
+  margin-left: 0;
+}
+}
+
+@media screen and (max-width: 400px) {
+.sidebar a {
+  text-align: center;
+  float: none;
+}
+}
+
+
+    </style>
+</head>
+<body>
+   
+  <div style="overflow-x:auto;">
+                 
+    <div class="adatok">
+        <img src="img/8TK_03_11abra.png" alt=""> 
+        
+            <input id="aoldal" type="number" placeholder="Add meg az A oldalt"><br>
+            <input id="boldal" type="number" placeholder="Add meg a B oldalt"><br>
+            <button onclick="szamolas(aoldal.value, boldal.value)">SZÁMÍTÁS</button><br>
+            <span style="text-align: center;" id="eredmeny"></span>
+        </div>
+            </div>
+        </div>
+    
+        
+
+
+
+
+        <script src="js/atrak.js"></script>
+
+
+    <script>
+    
+        function szamolas(a, b) {    
+            var eredmeny = Math.sqrt(+a*a + +b*b)
+            document.getElementById('eredmeny').innerHTML = eredmeny
+        }
+
+</script>
+
+<div class="nem">
+    <a href="index.html">Főoldal</a>
+    <a href="kollazs.html">1. Feladat Kollázs</a>
+    <a href="keplink.html">2. Feladat Képlink</a>
+    <a href="listak.html">3. Feladat Lista</a>
+    <a href="orarend.html">4. Feladat Órarend</a>
+    <a href="css.html">5. Feladat CSS</a>
+    <a href="urlap.html">6. Feladat Űrlap</a>
+    <a href="evszakok.html">7. Feladat Évszakok</a>
+    <a href="gomb.html">8. Feladat Gomb</a>
+    <a href="pita.html">9. Feladat Javascript</a>
+    <a href="kosar.html">10 Feladat Kosár</a>
+    <a class="active" href="pitagorasz.html">11. Feladat Pitagorasz</a>
+    <a href="webshop.html"> 12. Feladat Webshop</a>
+</div>
+
+<footer>
+    <h2> Copyright &copy; Skooon &copysr;</h2>
+  </footer>
+
+</body>
+</html>

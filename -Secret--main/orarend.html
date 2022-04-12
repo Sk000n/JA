@@ -1,0 +1,189 @@
+<!DOCTYPE html lang="HU">
+<html>
+<head>
+    <title>Órarend</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" type="image/png" href="favicon.ico.png">
+
+    <style> 
+     footer{
+        position: absolute;
+        background-color: black;
+        width: 100%;
+        height: 53px;
+        color: white;
+        bottom: 0;
+    }
+    h2 {
+      margin-left: 750px;
+    }
+    body {
+      font-family: 'Inconsolata', monospace;
+font-family: 'Orbitron', sans-serif;
+background-color: burlywood;
+    }
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1 {
+        text-align: center;
+        color: white;
+    }
+    a{
+    color: #1E90FF;
+    }
+    div {
+    
+    margin: 0;
+    padding: 0;
+    width: 230px;
+    background-color: rgb(139, 111, 74);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    top: 0%;
+  }
+  
+  div a {
+      
+    display: block;
+    color:black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  div a.active {
+    background-color: white;
+    color: black;
+  }
+  
+  div a:hover:not(.active) {
+    background-color: black;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 110%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+    </style>
+</head>
+
+<body bgcolor="grey" text="black"> 
+   
+          
+<h1> 3. Feladat: Órarend</h1>
+<table bordercolor="white" border=4px>
+    <tr>
+        <th>Órák</th>
+        <th>Hétfő</th>
+        <th>Kedd</th>
+        <th>Szerda</th>
+        <th>Csütörtök</th>
+        <th>Péntek</th>
+    </tr>
+    <tr>
+        <th>0.</th>
+        <td>Programozási alapok</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Testnevelés</td>
+    </tr>
+    <tr>
+        <th>1.</th>
+        <td>Programozási alapok</td>
+        <td>Angol nyelv</td>
+        <td>Matematika</td>
+        <td>Magyar nyelv és irodalom</td>
+        <td>Testnevelés</td>
+    </tr>
+    <tr>
+        <th>2.</th>
+        <td>Komplex természettudomány</td>
+        <td>Magyar nyelv és irodalom</td>
+        <td>Matematika (komp)</td>
+        <td>Matematika</td>
+        <td>IKT projektmunka I.</td>
+    </tr>
+    <tr>
+        <th>3.</th>
+        <td>Angol nyelv</td>
+        <td>Osztályfőnöki</td>
+        <td>Testnevelés</td>
+        <td>Történelem</td>
+        <td>Történelem</td>
+    </tr>
+    <tr>
+        <th>4.</th>
+        <td>Informatika és távközlés</td>
+        <td>Komplex természettudomány</td>
+        <td>Komplex természettudomány</td>
+        <td>Angol nyelv</td>
+        <td>Matematika</td>
+    </tr>
+    <tr>
+        <th>5.</th>
+        <td>Informatika és távközlés</td>
+        <td>Magyar nyelv (komp)</td>
+        <td>Magyar nyelv és irodalom</td>
+        <td>Testnevelés</td>
+        <td>Magyar nyelv és irodalom</td>
+    </tr>
+    <tr>
+        <th>6.</th>
+        <td>Informatika és távközlés</td>
+        <td>Matematika</td>
+        <td>Történelem</td>
+        <td></td>
+        <td>Digitális kultúra</td>
+    </tr>
+    <tr>
+        <th>7.</th>
+        <td></td>
+        <td>IKT projektmunka I.</td>
+        <td>Angol nyelv</td>
+        <td></td>
+        <td>Digitális kultúra</td>
+    </tr>
+
+</table>
+<div class="sidebar">
+  <a href="index.html">Főoldal</a>
+  <a href="kollazs.html">1. Feladat Kollázs</a>
+  <a href="keplink.html">2. Feladat Képlink</a>
+  <a href="listak.html">3. Feladat Lista</a>
+  <a class="active" href="orarend.html">4. Feladat Órarend</a>
+  <a href="css.html">5. Feladat CSS</a>
+  <a href="urlap.html">6. Feladat Űrlap</a>
+  <a href="evszakok.html">7. Feladat Évszakok</a>
+  <a href="gomb.html">8. Feladat Gomb</a>
+  <a href="pita.html">9. Feladat Javascript</a>
+  <a href="kosar.html">10 Feladat Kosár</a>
+  <a href="pitagorasz.html">11. Feladat Pitagorasz</a>
+  <a href="webshop.html"> 12. Feladat Webshop</a>
+</div>
+<footer>
+  <h2> Copyright &copy; Skooon &copysr;</h2>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="favicon.ico.png">
+    <title>Kosár</title>
+    <style>
+
+button {
+            background-color: white;
+            border-radius: 5px;
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        img {
+            padding: 5px;
+        }
+
+        table {
+            text-align: center;
+        }
+
+
+img {
+    width: 200px;
+    height: 150px;
+}
+        body {
+            background-color: rgb(139, 124, 103);
+        }
+ footer {
+      position: absolute;
+      background-color: black;
+      width: 100%;
+      height: 53px;
+      color: white;
+      bottom: 0;
+    }
+    h2 {
+        text-align: center;
+    }
+
+
+        button {
+            background-color: white;
+            border-radius: 5px;
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        img {
+            padding: 5px;
+        }
+
+        table {
+            text-align: center;
+        }
+.asd{
+    margin-left: 100px;
+     margin-top: 50px;
+}
+
+.nem {
+
+margin: 0;
+padding: 0;
+width: 230px;
+background-color: rgb(139, 111, 74);
+position: fixed;
+height: 100%;
+overflow: auto;
+top: 0%;
+}
+
+div a {
+
+display: block;
+color: black;
+padding: 16px;
+text-decoration: none;
+width: 1000%;
+}
+
+div a.active {
+background-color: white;
+color: black;
+}
+
+div a:hover:not(.active) {
+background-color: black;
+color: white;
+}
+
+div.content {
+margin-left: 200px;
+padding: 1px 16px;
+height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+.sidebar {
+  width: 110%;
+  height: auto;
+  position: relative;
+}
+
+.sidebar a {
+  float: left;
+}
+
+div.content {
+  margin-left: 0;
+}
+}
+
+@media screen and (max-width: 400px) {
+.sidebar a {
+  text-align: center;
+  float: none;
+}
+}
+
+    </style>
+
+</head>
+
+<body onload="torleees()">
+
+
+
+    <div class="asd" style="overflow-x:auto;">
+        <center>
+
+            <button onclick="kosarba('offwhite')"><img id="cipo1"
+                    src="img/1.jpg"
+                    alt=""><br> Termék 1</button>
+            <button onclick="kosarba('dior')"><img id="cipo2"
+                    src="img/img01.webp"
+                    alt=""><br>Termék 2</button>
+            <button onclick="kosarba('unc')"><img id="cipo3"
+                    src="img/letöltés.jfif"
+                    alt=""><br>Termék 3</button> <br><br>
+            <button onclick="torles()">TÖRLÉS</button><br><br>
+            <button onclick="kosar()">KOSÁR</button>
+            <p id="asd"></p>
+    
+            <script src="script.js"></script>
+    
+            <table border="1px" id='table'></table>
+                <button onclick="vasarlas()">Vásárlás</button>
+        </center>
+    
+    </div>
+</div>
+
+
+
+    
+
+    <div class="nem">
+        <a href="index.html">Főoldal</a>
+        <a href="kollazs.html">1. Feladat Kollázs</a>
+        <a href="keplink.html">2. Feladat Képlink</a>
+        <a href="listak.html">3. Feladat Lista</a>
+        <a href="orarend.html">4. Feladat Órarend</a>
+        <a href="css.html">5. Feladat CSS</a>
+        <a href="urlap.html">6. Feladat Űrlap</a>
+        <a href="evszakok.html">7. Feladat Évszakok</a>
+        <a href="gomb.html">8. Feladat Gomb</a>
+        <a href="pita.html">9. Feladat Javascript</a>
+        <a class="active" href="kosar.html">10 Feladat Kosár</a>
+        <a href="pitagorasz.html">11. Feladat Pitagorasz</a>
+        <a href="webshop.html"> 12. Feladat Webshop</a>
+      </div>
+
+
+    <footer>
+        <h2> Copyright &copy; Skooon &copysr;</h2>
+      </footer>
+</body>
+
+</html>

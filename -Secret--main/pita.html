@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="favicon.ico.png">
+    <title>JAVASCRIPT</title>
+
+    <style>
+
+.cucc {
+    display: inline-block;
+    margin-left: 810px;
+    margin-top: 200px;
+    background-color: rgb(187, 158, 120);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(223, 223, 223);
+    margin-top: 50px;
+}
+.szam1 {
+    margin-left: 510px;
+    margin-top: 100px;
+   margin: 30px;
+
+}
+
+button {
+    
+  justify-content: center;
+}
+
+footer {
+      position: absolute;
+      background-color: black;
+      width: 100%;
+      height: 53px;
+      color: white;
+      bottom: 0;
+    }
+h2 {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(187, 158, 120);
+}
+
+div {
+
+margin: 0;
+padding: 0;
+width: 230px;
+background-color: rgb(139, 111, 74);
+position: fixed;
+height: 100%;
+overflow: auto;
+top: 0%;
+}
+
+div a {
+
+display: block;
+color: black;
+padding: 16px;
+text-decoration: none;
+}
+
+div a.active {
+background-color: white;
+color: black;
+}
+
+div a:hover:not(.active) {
+background-color: black;
+color: white;
+}
+
+div.content {
+margin-left: 200px;
+padding: 1px 16px;
+height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+.sidebar {
+  width: 110%;
+  height: auto;
+  position: relative;
+}
+
+.sidebar a {
+  float: left;
+}
+
+div.content {
+  margin-left: 0;
+}
+}
+
+@media screen and (max-width: 400px) {
+.sidebar a {
+  text-align: center;
+  float: none;
+}
+}
+
+    </style>
+    
+</head>
+<body onload="atrak()">
+
+<h1>SZÁMOLÓGÉP</h1>
+
+<div class="cucc">
+    <input class="szam1" type="text" id="szam1">
+    <input class="szam1" type="text" id="szam2"> <br>
+    <button onclick="osszeadas()">Összeadás</button>
+    <button onclick="kivonas()">Kivonás</button>
+    <button onclick="szorzas()">Szorzás</button>
+    <button onclick="osztas()">Osztás</button>
+    <p>Az összeg: <span id="osszeg"></span></p>
+</div>
+    
+    <script>
+        // var szam1 = Number(prompt("Add meg a számot!"));
+        // var szam2 = Number(prompt("Add meg a számot!"));
+
+        // document.write("Az eredmény: ",  szam1+szam2)
+
+        function osszeadas() {
+            var szam1 = document.getElementById("szam1").value;
+            var szam2 = document.getElementById("szam2").value;
+            var osszeg = +szam1 + +szam2;
+            document.getElementById("osszeg").innerHTML = osszeg
+        }
+
+        function kivonas() {
+            var szam1 = document.getElementById("szam1").value;
+            var szam2 = document.getElementById("szam2").value;
+            var osszeg = +szam1 - +szam2;
+            document.getElementById("osszeg").innerHTML = osszeg
+        }
+        function szorzas() {
+            var szam1 = document.getElementById("szam1").value;
+            var szam2 = document.getElementById("szam2").value;
+            var osszeg = +szam1 * +szam2;
+            document.getElementById("osszeg").innerHTML = osszeg
+        }
+        function osztas() {
+            var szam1 = document.getElementById("szam1").value;
+            var szam2 = document.getElementById("szam2").value;
+            var osszeg = +szam1 / +szam2;
+            document.getElementById("osszeg").innerHTML = osszeg
+        }
+
+    </script>
+
+
+
+    
+<script src="js/atrak.js"></script>
+
+<div class="sidebar">
+    <a href="index.html">Főoldal</a>
+    <a href="kollazs.html">1. Feladat Kollázs</a>
+    <a href="keplink.html">2. Feladat Képlink</a>
+    <a href="listak.html">3. Feladat Lista</a>
+    <a href="orarend.html">4. Feladat Órarend</a>
+    <a href="css.html">5. Feladat CSS</a>
+    <a href="urlap.html">6. Feladat Űrlap</a>
+    <a href="evszakok.html">7. Feladat Évszakok</a>
+    <a href="gomb.html">8. Feladat Gomb</a>
+    <a class="active" href="pita.html">9. Feladat Javascript</a>
+    <a href="kosar.html">10 Feladat Kosár</a>
+    <a href="pitagorasz.html">11. Feladat Pitagorasz</a>
+    <a href="webshop.html"> 12. Feladat Webshop</a>
+  </div>
+
+  <footer>
+    <h2> Copyright &copy; Skooon &copysr;</h2>
+  </footer>
+
+</body>
+</html>
